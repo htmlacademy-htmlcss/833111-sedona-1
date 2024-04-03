@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Герасимова](https://up.htmlacademy.ru/htmlcss-individual/1/user/833111).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 
 ---
 
