@@ -5,10 +5,13 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <!-- Шапка страницы -->
     <header class="page-header">
-      <a class="logo-link" href="index.html">
+      <a class="logo-link" href="index.html" aria-current="page">
         <img class="logo" src="#" alt="Седона">
       </a>
+
+      <!-- Навигация шапки -->
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -33,13 +36,21 @@
           </a>
           </li>
         </ul>
+      <!-- Кнопка, ведущая на всплывющее окно поиска гостиницы-->
         <a class="button" href="#">Хочу сюда!</a>
+
       </nav>
+      <!-- /Навигация шапки -->
+
     </header>
+    <!-- /Шапка страницы -->
+
+    <!-- Основное содержимое страницы -->
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
+
+      <section class="catalog-items">
+        <h1 class="catalog-items-title">Гостиницы Седоны</h1>
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная страница</span>
@@ -48,11 +59,9 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
-        </ul>
-      </header>
-      <section class="catalog-items">
+        </ol>
         <h2 class="visually-hidden">Отфильтровать гостиницы</h2>
-        <form class="catalog-filter" action="#" method="POST">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="POST">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -112,9 +121,10 @@
         </fieldset>
         </form>
       </section>
+
       <section class="sorter-section">
-        <h2 class="sorter-heading">Сортировка результатов поиска</h2>
-        <p class="found-amount">Найдено: 38</p>
+      <header class="sorter-section-header">
+        <h2 class="found-amount">Найдено: 38</h2>
         <span class="visually-hidden">Сортировать гостиницы:</span>
         <select class="select-control" aria-label="Сортировка результатов поиска">
           <option value="cheap">Сначала дешевые</option>
@@ -138,8 +148,7 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="sorter-section">
+      </header>
         <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="hotel-list">
           <li class="hotel-card">
@@ -147,15 +156,17 @@
               <img class="logo-hotel" src="#" alt="Отель Amara resort">
               <h3 class="hotel-title">Amara resort & spa</h3>
             </a>
-              <p class="hotel-description">Гостиница</p>
-              <p class="hotel-price">От 4000 ₽</p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+            <p class="hotel-name">
+              <span class="hotel-description">Гостиница</span>
+              <b class="hotel-price">От 4000 ₽</b>
+            </p>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">В избранное</a>
             <div class="hotel-rating">
-              <p class="hotel-rating-stars">
+              <div class="hotel-rating-stars">
                 <span class="visually-hidden">4 звезды</span>
-              </p>
-              <p class="hotel-rating-number">Рейтинг: 9,5</p>
+              </div>
+              <div class="hotel-rating-number">Рейтинг: 8,5</div>
             </div>
           </li>
           <li class="hotel-card">
@@ -163,15 +174,17 @@
               <img class="logo-hotel" src="#" alt="Отель Villas at Poco Diablo">
               <h3 class="hotel-title">Villas at Poco Diablo</h3>
             </a>
-              <p class="hotel-description">Гостиница</p>
-              <p class="hotel-price">От 5000 ₽</p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+            <p class="hotel-name">
+              <span class="hotel-description">Гостиница</span>
+              <b class="hotel-price">От 5000 ₽</b>
+            </p>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">В избранном</a>
             <div class="hotel-rating">
-              <p class="hotel-rating-stars">
+              <div class="hotel-rating-stars">
                 <span class="visually-hidden">4 звезды</span>
-              </p>
-              <p class="hotel-rating-number">Рейтинг: 8,5</p>
+              </div>
+              <div class="hotel-rating-number">Рейтинг: 9,2</div>
             </div>
           </li>
           <li class="hotel-card">
@@ -179,15 +192,17 @@
               <img class="logo-hotel" src="#" alt="Отель Desert Quail Inn">
               <h3 class="hotel-title">Desert Quail Inn</h3>
             </a>
-              <p class="hotel-description">Гостиница</p>
-              <p class="hotel-price">От 2500 ₽</p>
-              <a class="button" href="#">Подробнее</a>
-              <a  class="button" href="#">Забронировать</a>
+            <p class="hotel-name">
+              <span class="hotel-description">Гостиница</span>
+              <b class="hotel-price">От 2500 ₽</b>
+            </p>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">В избранное</a>
             <div class="hotel-rating">
-              <p class="hotel-rating-stars">
+              <div class="hotel-rating-stars">
                 <span class="visually-hidden">3 звезды</span>
-              </p>
-              <p class="hotel-rating-number">Рейтинг: 6,9</p>
+              </div>
+              <div class="hotel-rating-number">Рейтинг: 6,9</div>
             </div>
           </li>
           <li class="hotel-card">
@@ -195,21 +210,24 @@
              <img class="logo-hotel" src="#" alt="Отель GreenTree Inn">
              <h3 class="hotel-title">GreenTree Inn</h3>
             </a>
-              <p class="hotel-description">Гостиница</p>
-              <p class="hotel-price">От 1500 ₽</p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+            <p class="hotel-name">
+              <span class="hotel-description">Гостиница</span>
+              <b class="hotel-price">От 1500 ₽</b>
+            </p>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">В избранное</a>
             <div class="hotel-rating">
-              <p class="hotel-rating-stars">
-                <span class="visually-hidden">2 звезды</span>
-              </p>
-              <p class="hotel-rating-number">Рейтинг: 5,0</p>
+              <div class="hotel-rating-stars">
+                <span class="visually-hidden">3 звезды</span>
+              </div>
+              <div class="hotel-rating-number">Рейтинг: 5,0</div>
             </div>
           </li>
-        </uL>
-      </section>
-      <div class="pagination">
-        <ul class="pagination-list">
+        </ul>
+
+      <!-- Подвал секции с сортировкой -->
+      <footer class="pagination-footer">
+        <ol class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-current" href="catalog.html" aria-current="page">1</a>
           </li>
@@ -228,19 +246,28 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-        </ul>
-      </div>
+        </ol>
+      </footer>
+       <!-- /Подвал секции с сортировкой -->
+
+      </section>
+
     </main>
+    <!-- /Основное содержимое страницы -->
+
+    <!-- Подвал сайта -->
     <footer class="page-footer">
+
       <section class="footer-newsletter">
         <h2 class="footer-newsletter-title">Подпишитесь на рассылку</h2>
         <p class="footer-newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="footer-newsletter-form" action="#" method="post">
+        <form class="footer-newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Ваш e-mail</label>
           <input type="email" id="email" name="email" placeholder="Ваш e-mail" required>
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
+
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer-social-list">
@@ -261,15 +288,21 @@
           </li>
         </ul>
       </section>
+
       <section class="footer-contacts">
         <h2 class="visually-hidden">Телефон</h2>
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <h2 class="visually-hidden">Создатель сайта</h2>
+      </section>
+
+      <section class="footer-partners">
+        <h2 class="visually-hidden">Партнеры сайта</h2>
           <a class="about-text" href="https://htmlacademy.ru/">
             <img class="htmlacademy-link" src="#" alt="Логотип HTML академии">
         </a>
       </section>
+
     </footer>
-    <!-- Подвал сайта -->
+    <!-- /Подвал сайта -->
+
   </body>
 </html>
