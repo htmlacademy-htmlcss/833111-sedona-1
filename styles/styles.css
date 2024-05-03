@@ -35,6 +35,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Стили в секции header */
 .page-header{
   color: #000000;
   background-color: #FFFFFF;
@@ -50,7 +51,7 @@ body {
 }
 
 
-/* Стили в секции hero */
+/* Стили в секции hero на странице index */
 .hero {
   background-image: url("../images/index-hero/index-background.jpg");
   color: #000000;
@@ -72,8 +73,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto;
-  padding: 69px 290px 25px;
 }
 
 .advantages-reason{
@@ -111,22 +110,7 @@ body {
   background: #83B3D31F;
 }
 
-/* Стили в секции services */
-.services-title{
-  text-align: center;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
-.services-reason{
-  text-align: center;
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-}
-
+/* Стили в секции services на странице index */
 .services-name{
   text-align: center;
   font-weight: 700;
@@ -140,17 +124,91 @@ body {
   font-weight: 400;
 }
 
-.search-title{
+/* Стили в footer*/
+.footer-newsletter-background{
+  background-image: url("../images/footer/background-footer.jpg");
+  color: #FFFFFF;
+  background-color:  #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.footer-newsletter-title{
   text-align: center;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 28px;
   text-transform: uppercase;
 }
 
-.search-description{
+.footer-newsletter-description{
   text-align: center;
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  font-weight: 400;
+}
+
+.footer-contacts-phone{
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Стили в секции catalog-items на странице catalog */
+.catalog-items{
+  background-image: url("../images/catalog-search/background-search.jpg");
+  color: #FFFFFF;
+  background-color:  #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.catalog-items-title{
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-link{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-filter-title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.catalog-filter-item{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+/* Стили в секции sorter-section на странице catalog */
+.found-amount{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.hotels-card-link{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hotel-name{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
