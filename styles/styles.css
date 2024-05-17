@@ -79,7 +79,6 @@ li {
 .logo-sedona {
   display: block;
   margin: 0 auto;
-  padding: 51px 371px 82px;
 }
 
 /* Стили в секции advantages */
@@ -102,7 +101,6 @@ li {
 
 .advantages-item {
   text-align: center;
-  color: #000000;
   background: #83B3D333;
 }
 
@@ -113,7 +111,11 @@ li {
   text-transform: uppercase;
 }
 
-.advantages-description {
+.advantages-name-black{
+  color: #000000;
+}
+
+.beautiful-road {
   font-weight: 400;
   color: #333333;
 }
@@ -124,7 +126,7 @@ li {
 }
 
 .light-blue {
-  color: #000000;
+  color: #333333;
   background: #83B3D31F;
 }
 
@@ -134,7 +136,7 @@ li {
 }
 
 .white-background {
-  background: #FFFFFF;;
+  background: #FFFFFF;
 }
 
 .services-name {
@@ -255,6 +257,7 @@ li {
   line-height: 20px;
   font-weight: 400;
   color: #333333;
+  background-color: #F2F2F2;
   text-transform: uppercase;
 }
 
