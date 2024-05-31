@@ -81,7 +81,7 @@ li {
 /* Стили в секции header */
 .page-header {
   display: flex;
-  margin: 0 70px;
+  padding: 0 70px;
 }
 
 .logo{
@@ -100,16 +100,16 @@ li {
 .navigation-list{
   margin: 0;
   padding: 0;
-  width: 430px;
   display: flex;
   flex-wrap: wrap;
+  gap: 32px;
 }
 
 .navigation-user{
   display: flex;
   padding: 0;
-  width: 132px;
   margin-left: auto;
+  gap: 24px;
 }
 
 .navigation-link {
