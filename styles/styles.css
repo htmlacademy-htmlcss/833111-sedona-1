@@ -86,15 +86,19 @@ li {
 
 .logo{
   display: block;
-  margin-right: 30px;
   margin-bottom: -6px;
   position: relative;
+}
+
+.logo-link {
+  margin-right: 30px;
 }
 
 .navigation {
   display: flex;
   width: 892px;
   margin: 0;
+  gap: 20px;
 }
 
 .navigation-list{
@@ -102,7 +106,7 @@ li {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  align-items: center;
 }
 
 .navigation-user{
@@ -119,6 +123,7 @@ li {
   color: inherit;
   text-align: center;
   text-decoration: none;
+  padding: 20px 16px;
 }
 
 
@@ -127,7 +132,7 @@ li {
   background-image: url("../images/index-hero/index-background.jpg");
   color: #FFFFFF;
   background-color: #8CABB8;
-  background-size: cover, 1200px auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 51px 70px 82px;
@@ -172,6 +177,7 @@ li {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .advantages-item {
@@ -188,6 +194,7 @@ li {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
 }
 
 .advantages-view-hotel {
@@ -206,7 +213,7 @@ li {
 
 }
 
-.advantages-dark-blue{
+.advantages-center{
   text-align: center;
   padding: 102px 85px;
 }
@@ -259,7 +266,7 @@ li {
   margin: 0;
   list-style: none;
   width: 1200px;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .services-item {
@@ -491,6 +498,14 @@ li {
   border: none;
 }
 
+.catalog-filter-coast{
+  margin-left: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 70px;
+}
+
 .catalog-filter-price {
   margin: 0;
   padding: 0;
@@ -503,6 +518,7 @@ li {
   flex-direction: column;
   justify-content: center;
   margin-left: auto;
+
 }
 
 .button-apply {
@@ -523,6 +539,7 @@ li {
   display: flex;
   margin: 0;
   padding: 57px 70px 47px;
+  gap: 70px;
 }
 
 .found-amount {
@@ -532,15 +549,12 @@ li {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  margin-right: 200px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-right: auto;
 }
 
 .select-control {
   width: 292px;
   margin: 0;
-  margin-right: 70px;
 }
 
 .use-icons-list {
@@ -579,14 +593,23 @@ li {
   display: flex;
   padding: 0 70px;
   flex-wrap: wrap;
-  align-content: stretch;
+  justify-content: flex-start;
   margin: 0;
-  padding: 80px;
+  padding-bottom: 40px;
+  gap: 20px;
 }
+
 
 .hotel-card {
   padding: 20px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-hotel{
+  width: 300px;
+  height: 212px;
 }
 
 .hotels-card-link {
@@ -641,6 +664,12 @@ li {
 
 }
 
+.hotel-button{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .button-favorite {
   background-color: #82B3D3;
   padding: 8px 20px;
@@ -651,7 +680,6 @@ li {
 .button-more {
   padding: 8px 26px;
   margin: 0;
-  margin-right: 20px;
   margin-bottom: 16px;
 }
 
@@ -667,6 +695,7 @@ li {
   padding: 0 70px;
   margin: 0;
   padding-bottom: 60px;
+  padding-top: 40px;
   gap: 8px;
 }
 
