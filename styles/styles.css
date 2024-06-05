@@ -28,7 +28,7 @@ body {
   background-color: #FFFFFF;
   margin: 0;
   padding: 0;
-  min-height: 100%;
+  height: 100%;
   min-width: 1200px;
 }
 
@@ -86,18 +86,17 @@ li {
 
 .logo{
   display: block;
-  margin-bottom: -6px;
-  position: relative;
 }
 
 .logo-link {
-  margin-right: 30px;
+  margin: 0 30px -6px 0;
+  display: block;
+  position: relative;
 }
 
 .navigation {
   display: flex;
-  width: 892px;
-  margin: 0;
+  width: 100%;
   gap: 20px;
 }
 
@@ -112,8 +111,8 @@ li {
 .navigation-user{
   display: flex;
   padding: 0;
-  margin-left: auto;
   gap: 24px;
+  margin: 0 0 0 auto;
 }
 
 .navigation-link {
@@ -124,17 +123,25 @@ li {
   text-align: center;
   text-decoration: none;
   padding: 20px 16px;
+  display: block;
 }
 
+.navigation-button{
+  margin: 14px 0;
+}
 
 /* Стили в секции hero на странице index */
+.main-index{
+flex-grow: 1;
+}
+
 .hero {
-  background-image: url("../images/index-hero/index-background.jpg");
+  background-image:  url(../images/index-hero/vector-index.svg), url("../images/index-hero/index-background.jpg");
+  background-size: 1200px auto cover;
+  background-position: center bottom, center;
   color: #FFFFFF;
   background-color: #8CABB8;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   padding: 51px 70px 82px;
 }
 
@@ -158,7 +165,6 @@ li {
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 25px;
-  padding: 0;
   text-align: center;
 }
 
@@ -168,7 +174,6 @@ li {
   font-weight: 400;
   color: #333333;
   margin: 0 auto;
-  padding: 0;
   text-align: center;
 }
 
@@ -194,7 +199,13 @@ li {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 62px 0;
+  display: block;
+}
 
+.advantages-description {
+  margin: auto 0 0 0;
+  display: block;
 }
 
 .advantages-view-hotel {
@@ -210,13 +221,24 @@ li {
   min-width: 1200px;
   margin: 0 auto;
   display: flex;
-
 }
 
 .advantages-center{
   text-align: center;
   padding: 102px 85px;
+  width: 230px;
+  height: 181px;
 }
+
+.advantages-non-img {
+  text-align: center;
+  padding: 102px 85px;
+  width: 230px;
+  height: 160px;
+  display: flex;
+  flex-direction: column
+}
+
 
 .light-blue {
   color: #333333;
@@ -244,9 +266,7 @@ li {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 0;
+  margin: 0 auto 20px;
   text-align: center;
 }
 
@@ -256,7 +276,6 @@ li {
   font-weight: 400;
   color: #333333;
   margin: 0 auto;
-  padding: 0;
   text-align: center;
 }
 
@@ -271,13 +290,12 @@ li {
 
 .services-item {
   background: #83B3D31F;
-  width: 400px;
-  height: 385px;
+  width: 230px;
+  height: 223px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+  padding: 81px 85px;
+  justify-content: flex-end;
 }
 
 .services-item:nth-child(even){
@@ -290,13 +308,16 @@ li {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0 0 30px 0;
 }
 
 .services-description {
   text-align: center;
   font-weight: 400;
   color: #333333;
+  margin: 0;
 }
+
 
 /* Стили в секции search на странице index */
 
@@ -311,9 +332,7 @@ li {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 0;
+  margin: 0 auto 20px;
   text-align: center;
 }
 
@@ -322,9 +341,7 @@ li {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-  margin: 0 auto;
-  margin-bottom: 54px;
-  padding: 0;
+  margin: 0 auto 54px;
   text-align: center;
 }
 
@@ -341,7 +358,6 @@ li {
 .footer-newsletter{
   text-align: center;
   padding: 96px 70px;
-  margin: 0;
 }
 
 .footer-newsletter-title {
@@ -349,15 +365,11 @@ li {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
+  margin: 0 0 20px 0;
 }
 
 .footer-newsletter-description {
-  margin: 0;
-  margin-bottom: 54px;
-  padding: 0;
+  margin: 0 0 54px 0;
 }
 
 .button-search-hotels{
@@ -437,16 +449,14 @@ li {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
   padding: 0;
 }
 
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   padding: 0;
 }
 
@@ -518,14 +528,12 @@ li {
   flex-direction: column;
   justify-content: center;
   margin-left: auto;
-
 }
 
 .button-apply {
   background-color: #82b3d3;
   padding: 8px 50px;
-  margin-bottom: 32px;
-  margin-top: 56px;
+  margin: 56px 0 32px 0;
 }
 
 .button-reset {
@@ -567,18 +575,16 @@ li {
   width: 16px;
   height: 14px;
   background-color: #ffffff;
-  margin: 0;
+  margin: 0 8px 0 0;
   padding: 17px 16px;
-  margin-right: 8px;
 }
 
 .button-icons-gallery {
   width: 16px;
   height: 14px;
   background-color: #ffffff;
-  margin: 0;
+  margin: 0 8px 0 0;
   padding: 17px 16px;
-  margin-right: 8px;
 }
 
 .button-icons-list {
@@ -591,14 +597,11 @@ li {
 
 .hotel-list {
   display: flex;
-  padding: 0 70px;
+  padding: 0 70px 40px;
   flex-wrap: wrap;
-  justify-content: flex-start;
   margin: 0;
-  padding-bottom: 40px;
   gap: 20px;
 }
-
 
 .hotel-card {
   padding: 20px;
@@ -610,6 +613,7 @@ li {
 .logo-hotel{
   width: 300px;
   height: 212px;
+  margin-bottom: 16px;
 }
 
 .hotels-card-link {
@@ -618,13 +622,13 @@ li {
   font-weight: 700;
   color: inherit;
   text-decoration: none;
+  margin: 0 0 16px 0;
 }
 
 .hotel-title {
   line-height: 21px;
   font-weight: 400;
   margin: 0;
-  margin-top: 16px;
   padding: 0;
 }
 
@@ -633,7 +637,7 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    margin: 16px 0;
+    margin: 0 0 16px 0;
 }
 
 .hotel-description {
@@ -673,8 +677,7 @@ li {
 .button-favorite {
   background-color: #82B3D3;
   padding: 8px 20px;
-  margin: 0;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
 }
 
 .button-more {
@@ -692,10 +695,8 @@ li {
 
 .pagination-list {
   display: flex;
-  padding: 0 70px;
+  padding: 40px 70px 60px;
   margin: 0;
-  padding-bottom: 60px;
-  padding-top: 40px;
   gap: 8px;
 }
 
@@ -709,7 +710,7 @@ li {
   text-align: center;
   color: #ffffff;
   background-color: #82b3d3;
-  padding: 12px 24px;
+  padding: 11px 23px;
   box-sizing: border-box;
   font-size: 20px;
   line-height: 36px;
