@@ -191,6 +191,8 @@ flex-grow: 1;
   width: 400px;
   height: 385px;
   margin: 0;
+  box-sizing: border-box;
+  padding: 102px 85px;
 }
 
 .advantages-name {
@@ -198,14 +200,16 @@ flex-grow: 1;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
   margin: 0 0 62px 0;
   display: block;
+  text-align: center;
 }
 
 .advantages-description {
   margin: auto 0 0 0;
   display: block;
+  font-weight: 400;
+  color: #333333;
 }
 
 .advantages-view-hotel {
@@ -215,7 +219,7 @@ flex-grow: 1;
   display: block;
 }
 
-.dark-blue {
+.advantages-item-img {
   color: #FFFFFF;
   background: rgba(130, 179, 211, 1);
   min-width: 1200px;
@@ -223,37 +227,18 @@ flex-grow: 1;
   display: flex;
 }
 
-.advantages-center{
-  text-align: center;
-  padding: 102px 85px;
-  width: 230px;
-  height: 181px;
+.advantages-item-img .advantages-description {
+  color: #F2F2F2;
 }
 
-.advantages-non-img {
-  text-align: center;
-  padding: 102px 85px;
-  width: 230px;
-  height: 160px;
-  display: flex;
-  flex-direction: column
-}
-
-
-.light-blue {
-  color: #333333;
+.advantages-item:nth-child(odd of :not(.advantages-item-img)) {
   background: rgba(131, 179, 211, 0.12);
+  padding: 112px 85px;
 }
 
-.advantages-name-black{
-  color: #000000;
+.advantages-list .advantages-item:nth-child(3) {
+  padding: 112px 85px;
 }
-
-.beautiful-road {
-  font-weight: 400;
-  color: #333333;
-}
-
 
 /* Стили в секции services на странице index */
 .services-sedona {
@@ -295,7 +280,7 @@ flex-grow: 1;
   display: flex;
   flex-direction: column;
   padding: 81px 85px;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .services-item:nth-child(even){
@@ -355,7 +340,7 @@ flex-grow: 1;
   background-repeat: no-repeat;
 }
 
-.footer-newsletter{
+.footer-newsletter {
   text-align: center;
   padding: 96px 70px;
 }
@@ -370,6 +355,8 @@ flex-grow: 1;
 
 .footer-newsletter-description {
   margin: 0 0 54px 0;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .button-search-hotels{
@@ -567,33 +554,40 @@ flex-grow: 1;
 
 .use-icons-list {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
+  gap: 8px;
   padding: 0;
+  margin: 0;
+}
+
+.use-icons-item {
+  display: flex;
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 14px;
+  padding: 17px 16px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 .button-icons-item {
-  width: 16px;
-  height: 14px;
-  background-color: #ffffff;
-  margin: 0 8px 0 0;
-  padding: 17px 16px;
+  background-image: url(../images/icons/use-icons-items.svg);
 }
 
 .button-icons-gallery {
-  width: 16px;
-  height: 14px;
-  background-color: #ffffff;
-  margin: 0 8px 0 0;
-  padding: 17px 16px;
+  background-image: url(../images/icons/use-icons-gallery.svg);
 }
 
 .button-icons-list {
-  width: 16px;
-  height: 14px;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 17px 16px;
+  background-image: url(../images/icons/use-icons-list.svg);
 }
+
 
 .hotel-list {
   display: flex;
@@ -710,7 +704,7 @@ flex-grow: 1;
   text-align: center;
   color: #ffffff;
   background-color: #82b3d3;
-  padding: 11px 23px;
+  padding: 11px 0;
   box-sizing: border-box;
   font-size: 20px;
   line-height: 36px;
