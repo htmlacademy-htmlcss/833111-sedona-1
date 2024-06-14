@@ -97,7 +97,6 @@ li {
 .navigation {
   display: flex;
   width: 100%;
-  gap: 20px;
 }
 
 .navigation-list{
@@ -106,12 +105,12 @@ li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 20px;
 }
 
 .navigation-user{
   display: flex;
   padding: 0;
-  gap: 24px;
   margin: 0 0 0 auto;
 }
 
@@ -126,18 +125,17 @@ li {
   display: block;
 }
 
-.navigation-button{
+.navigation-button {
   margin: 14px 0;
 }
 
 /* Стили в секции hero на странице index */
-.main-index{
+.main-index {
 flex-grow: 1;
 }
 
 .hero {
   background-image:  url(../images/index-hero/vector-index.svg), url("../images/index-hero/index-background.jpg");
-  background-size: 1200px auto cover;
   background-position: center bottom, center;
   color: #FFFFFF;
   background-color: #8CABB8;
@@ -193,6 +191,7 @@ flex-grow: 1;
   margin: 0;
   box-sizing: border-box;
   padding: 102px 85px;
+  position: relative;
 }
 
 .advantages-name {
@@ -200,7 +199,7 @@ flex-grow: 1;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 62px 0;
+  margin: 0 0 60px 0;
   display: block;
   text-align: center;
 }
@@ -309,7 +308,6 @@ flex-grow: 1;
 .search {
   text-align: center;
   padding: 96px 70px;
-  margin: 0;
 }
 
 .search-title {
@@ -385,7 +383,6 @@ flex-grow: 1;
   font-weight: 400;
   color: inherit;
   text-decoration: none;
-  width: 331px;
   margin-left: 236px;
 }
 
@@ -497,7 +494,6 @@ flex-grow: 1;
 
 .catalog-filter-coast{
   margin-left: auto;
-  margin: 0;
   padding: 0;
   display: flex;
   gap: 70px;
@@ -549,6 +545,7 @@ flex-grow: 1;
 
 .select-control {
   width: 292px;
+  height: 49px;
   margin: 0;
 }
 
@@ -560,19 +557,11 @@ flex-grow: 1;
   margin: 0;
 }
 
-.use-icons-item {
-  display: flex;
-}
-
 .button-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 14px;
-  padding: 17px 16px;
+  display: block;
+  width: 48px;
+  height: 48px;
   background-repeat: no-repeat;
-  background-size: auto;
   background-position: center;
 }
 
@@ -611,17 +600,15 @@ flex-grow: 1;
 }
 
 .hotels-card-link {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
   color: inherit;
   text-decoration: none;
   margin: 0 0 16px 0;
 }
 
 .hotel-title {
-  line-height: 21px;
-  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 }
@@ -662,7 +649,7 @@ flex-grow: 1;
 
 }
 
-.hotel-button{
+.hotel-button {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -698,13 +685,11 @@ flex-grow: 1;
   min-width: 60px;
   height: 60px;
   display: block;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   text-align: center;
   color: #ffffff;
   background-color: #82b3d3;
-  padding: 11px 0;
+  padding: 11px 18px;
   box-sizing: border-box;
   font-size: 20px;
   line-height: 36px;
@@ -716,8 +701,6 @@ flex-grow: 1;
   width: 60px;
   height: 60px;
   display: block;
-  align-items: center;
-  justify-content: center;
   color: #000000;
   background-color: #f2f2f2;
 }
