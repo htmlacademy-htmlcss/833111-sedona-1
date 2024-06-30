@@ -55,6 +55,7 @@ body {
   border-radius: 4px;
   display: inline-block;
   border: none;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -125,13 +126,14 @@ body {
 }
 
 .navigation-link-current::after {
-  content: "";
   position: absolute;
+  right: 16px;
+  bottom: -1px;
+  left: 16px;
+  content: "";
   display: block;
-  width: 68px;
   height: 2px;
   background-color: #756257;
-  margin-top: 19px;
 }
 
 .navigation-user-item a {
@@ -466,9 +468,9 @@ flex-grow: 1;
   padding: 0 20px;
   font-size: 18px;
   font-family: inherit;
-  text-align: left;
   box-sizing: border-box;
   border: none;
+  background-color: #F2F2F2;
   border-radius: 5px 0 0 5px;
 }
 
@@ -484,6 +486,7 @@ flex-grow: 1;
 
 
 /* Стили в секции footer на странице catalog */
+
 .footer-newsletter-catalog{
   text-align: center;
   font-size: 22px;
@@ -566,6 +569,13 @@ flex-grow: 1;
   margin: 0 0 40px 0;
   padding: 0;
   list-style-type: none;
+  gap: 11px;
+}
+
+.breadcrumbs-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .breadcrumbs-link {
@@ -575,6 +585,33 @@ flex-grow: 1;
   color: inherit;
   text-decoration: none;
 }
+
+.breadcrumbs-link-home {
+  height: 13px;
+  width: 15px;
+  background: url("../images/icons/home.svg") no-repeat center;
+}
+
+.breadcrumbs-link-no-home::before {
+  content: "";
+  background: url("../images/icons/breadcrumbs_arrow.svg") no-repeat center;
+  width: 8px;
+  height: 11px;
+  margin-right: 7px;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 
 .catalog-filter {
   display: flex;
@@ -634,6 +671,25 @@ flex-grow: 1;
   border: none;
   display: flex;
 }
+
+.filter-text-field {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 44px;
+}
+
+.filter-field {
+  padding: 12px 20px;
+  width: 103px;
+  min-height: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  border-radius: 4px;
+  border: none;
+}
+
 
 .filter-button {
   display: flex;
@@ -723,6 +779,8 @@ flex-grow: 1;
   gap: 16px 20px;
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: min-content;
+  border: 1px solid #E6E6E6; /* Задаем рамку: цвет #756257, толщина 2 пикселя */
+  border-radius: 4px; /* Закругляем углы */
 }
 
 .logo-hotel{
@@ -763,6 +821,40 @@ flex-grow: 1;
   margin-left: auto;
 }
 
+.hotel-rating-stars{
+  height: 17px;
+  width: 105px;
+  display: inline-block;
+  position: relative;
+}
+
+.hotel-rating-stars::before {
+  content: '';
+  display: block;
+  height: 17px;
+  background-image: url(../images/icons/star.svg);
+  background-repeat: space no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+}
+
+.star-4::before {
+  width: 85px;
+}
+
+.star-3::before {
+  width: 65px;
+}
+
+.star-2::before{
+  width: 45px;
+}
+
+.star-1::before{
+  width: 20px;
+}
+
 .hotel-rating-number {
   font-size: 16px;
   line-height: 20px;
@@ -773,6 +865,8 @@ flex-grow: 1;
   text-align: center;
   margin: 0;
   display: inline-block;
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
 }
 
 .button-favorite {
