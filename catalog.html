@@ -123,18 +123,22 @@
               <fieldset class="catalog-filter-price">
                 <legend class="catalog-filter-title">Стоимость в сутки (Р):</legend>
                 <div class="filter-text-field">
-                  <label class="price-label" for="min-price"></label>
-                  <input class="filter-field" type="text" name="min-cost" id="min-price" value="0" title="Введите минимальную стоимость" placeholder="от">
-                  <label class="price-label" for="max-price"></label>
-                  <input class="filter-field filter-field-right" type="text" name="max-cost" id="max-price" value="9000" title="Введите максимальную стоимость" placeholder="до">
+                  <label class="price-label" for="min-price">
+                    <span>от</span>
+                    <input class="filter-field" type="number" name="min-cost" id="min-price" value="0" title="Введите минимальную стоимость" min="0" max="9000">
+                  </label>
+                  <label class="price-label-for" for="max-price">
+                    <span>до</span>
+                    <input class="filter-field filter-field-right" type="number" name="max-cost" id="max-price" value="9000" title="Введите максимальную стоимость" min="0" max="9000">
+                  </label>
                 </div>
                 <div class="range">
                   <div class="range-scale">
-                    <div class="range-bar" style="right: -5px; width: 286px">
-                      <button class="range-toggle toggle-min">
+                    <div class="range-bar" style="right: 71px; left: 0">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
