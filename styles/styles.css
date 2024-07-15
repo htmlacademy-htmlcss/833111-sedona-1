@@ -61,6 +61,7 @@ body {
 .button:disabled {
   background-color: #E5E5E5;
   color: #FFFFFF;
+  cursor: not-allowed;
 }
 
 .visually-hidden {
@@ -78,6 +79,15 @@ body {
 
 .span-wrap{
   display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 /* Стили в секции header */
@@ -532,11 +542,11 @@ flex-grow: 1;
 }
 
 .form-email:not(:disabled):hover {
-  opacity: 0.6;
+  background-color: #E6E6E6;
 }
 
 .form-email:not(:disabled):active {
-  opacity: 0.3;
+  outline: 2px solid #000000;
 }
 
 .form-email:disabled {
@@ -798,10 +808,6 @@ flex-grow: 1;
   border-color: #242424;
 }
 
-.control-label:not(:disabled):hover {
-  opacity: 0.6;
-}
-
 .control-label:not(:disabled):active {
   opacity: 0.3;
 }
@@ -838,7 +844,6 @@ flex-grow: 1;
   border-radius: 50%;
   content: "";
 }
-
 
 .filter-housing {
   margin: 0;
@@ -1138,6 +1143,15 @@ border-color: #68A2CA;
   grid-column: 1 / -1;
 }
 
+.hotels-card-link:hover{
+  opacity: 0.6;
+}
+
+.hotels-card-link:active{
+  opacity: 0.3;
+}
+
+
 .hotel-title {
   font-size: 24px;
   line-height: 28px;
@@ -1318,10 +1332,17 @@ border-color: #68A2CA;
   top: 0;
   left: 0;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
+
+
+.modal-container-closer{
+  display: none;
+}
+  */
 
 .modal {
   position: relative;
@@ -1394,7 +1415,6 @@ border-color: #68A2CA;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 87px;
-  margin-bottom: 25px;
 }
 
 .field-date{
@@ -1484,6 +1504,7 @@ border-color: #68A2CA;
   line-height: 24px;
   background-color: #83B3D3;
   border-radius: 10px;
+  margin-top: 25px;
 }
 
 .find-form-button:not(:disabled):hover{
