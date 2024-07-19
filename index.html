@@ -28,24 +28,25 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-user">
-            <li class="navigation-user-item">
-              <a class="navigation-search" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-link-favorites" href="#">
+        </nav>
+        <!-- /Навигация шапки -->
+
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-link-favorites" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="notification-badge">12</span>
             </a>
-            </li>
-          </ul>
-        <!-- Кнопка, ведущая на всплывющее окно поиска гостиницы-->
-          <a class="button navigation-button" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
 
-        </nav>
-        <!-- /Навигация шапки -->
+        <!-- Кнопка, ведущая на всплывющее окно поиска гостиницы-->
+        <a class="button navigation-button" href="#">Хочу сюда!</a>
 
       </header>
       <!-- /Шапка страницы -->
@@ -67,7 +68,7 @@
 
           <ul class="advantages-list">
             <li class="advantages-item-img">
-              <div class="advantages-item">
+              <div class="advantages-item advantages-item-left">
                 <h3 class="advantages-name advantages-name-img">Настоящий <span class="span-wrap">городок</span></h3>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
@@ -87,7 +88,7 @@
             </li>
             <li class="advantages-item-img">
               <img class="advantages-view-canуon" src="images/index-advantages/devil-bridge.jpg" width="800" height="385" alt="Мост Дьявола">
-              <div class="advantages-item">
+              <div class="advantages-item advantages-item-right">
                 <h3 class="advantages-name advantages-name-img">Там есть <span class="span-wrap">мост Дьявола</span></h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
@@ -145,6 +146,7 @@
         <div class="footer-wrap">
           <section class="footer-social">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
+
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="footer-social-link" href="https://vk.com/htmlacademy">
@@ -165,6 +167,7 @@
                 </a>
               </li>
             </ul>
+
           </section>
 
           <section class="footer-contacts">
@@ -183,12 +186,15 @@
       </footer>
       <!-- /Подвал сайта -->
 
+      <!-- Модальное окно -->
       <div class="modal-container modal-container-closer">
+
         <div class="modal modal-auth">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15"><path fill="#000" d="M14.5 1.78 13.2.5l-5.7 5.7L1.77.5.5 1.79l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/></svg>
           </button>
+
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -202,44 +208,47 @@
                 <input class="auth-form-field field" type="text" id="date-end" name="date-end" value="1 сентября 2021" placeholder="Укажите дату">
                 <span class="text-search">На эти даты есть свободные номера. Пока есть.</span>
               </p>
+
               <div class="field-group-count">
-              <p class="field-group">
-                <label class="field-date field-adult" for="adult">Взрослые:</label>
-                <button class="button button-amount button-minus" type="button">
-                  <span class="visually-hidden">Уменьшить количество</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M3 9v2h14V9H3Z"/></svg>
-                </button>
-                <input class="count-form-field field" type="number" id="adult" name="adult" value="2" min="1" max="20">
-                <button class="button button-amount button-plus" type="button">
-                  <span class="visually-hidden">Увеличить количество</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
-                </button>
-              </p>
-              <p class="field-group">
-                <label class="field-date field-children" for="children">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
-                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd"/></svg>
+                <p class="field-group">
+                  <label class="field-date field-adult" for="adult">Взрослые:</label>
+                  <button class="button button-amount button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M3 9v2h14V9H3Z"/></svg>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
-                <button class="button button-amount button-minus" type="button">
-                  <span class="visually-hidden">Уменьшить количество</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M3 9v2h14V9H3Z"/></svg>
-                </button>
-                <input class="count-form-field field" type="number" id="children" name="children" value="2" min="0" max="20">
-                <button class="button button-amount button-plus" type="button">
-                  <span class="visually-hidden">Увеличить количество</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
-                </button>
-              </p>
-            </div>
+                  <input class="count-form-field field" type="number" id="adult" name="adult" value="2" min="1" max="20">
+                  <button class="button button-amount button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+                  </button>
+                </p>
+                <p class="field-group">
+                  <label class="field-date field-children" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                  <button class="button button-amount button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M3 9v2h14V9H3Z"/></svg>
+                  </button>
+                  <input class="count-form-field field" type="number" id="children" name="children" value="2" min="0" max="20">
+                  <button class="button button-amount button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+                  </button>
+                </p>
+              </div>
+
               <button class="button find-form-button" type="submit">Найти</button>
             </form>
           </section>
-        </div>
-      </div>
 
+        </div>
+
+      </div>
+      <!-- /Модальное окно -->
     </div>
   </body>
 </html>
