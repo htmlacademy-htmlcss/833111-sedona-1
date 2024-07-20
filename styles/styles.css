@@ -25,7 +25,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -35,6 +35,7 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #FFFFFF;
   box-shadow: 0 0 20px rgba(0,0,0, 0.2);
   display: flex;
   flex-direction: column;
@@ -82,6 +83,12 @@ body {
   display: block;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .field {
   width: 440px;
   height: 48px;
@@ -115,7 +122,7 @@ body {
 }
 
 .field {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 /* Стили в секции header */
@@ -127,6 +134,8 @@ body {
 
 .logo {
   display: block;
+  width: 140px;
+  height: 70px;
 }
 
 .logo-link {
@@ -281,6 +290,8 @@ flex-grow: 1;
   display: block;
   padding: 0;
   margin: 0 auto;
+  width: 458px;
+  height: 352px;
 }
 
 /* Стили в секции advantages */
@@ -392,6 +403,16 @@ flex-grow: 1;
   padding: 112px 85px;
 }
 
+.advantages-view-hotel {
+  width: 800px;
+  height: 385px;
+}
+
+.advantages-view-canуon {
+  width: 800px;
+  height: 385px;
+}
+
 /* Стили в секции services на странице index */
 .services-sedona {
   padding: 64px 70px;
@@ -427,7 +448,7 @@ flex-grow: 1;
 }
 
 .services-item {
-  background: #83B3D31F;
+  background-color: #83B3D31F;
   width: 230px;
   flex-wrap: wrap;
   display: flex;
@@ -464,7 +485,7 @@ flex-grow: 1;
 }
 
 .services-item:nth-child(even) {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .services-name {
@@ -930,7 +951,7 @@ flex-grow: 1;
 }
 
 .filter-field {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .price-label{
@@ -1003,7 +1024,7 @@ flex-grow: 1;
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -1024,7 +1045,7 @@ flex-grow: 1;
 
 .toggle-max {
   top: -8px;
-  right: 0px;
+  right: 0;
 }
 
 .filter-button {
@@ -1170,6 +1191,7 @@ border-color: #68A2CA;
   grid-template-rows: 1fr auto;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  align-items: flex-start;
 }
 
 .logo-hotel {
@@ -1446,12 +1468,12 @@ border-color: #68A2CA;
 
 .auth-form {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   gap: 23px
 }
 
 .auth-form-field {
+  width: 440px;
   background-image: url(../images/modal-window/calendar.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1460,7 +1482,7 @@ border-color: #68A2CA;
 .field-group {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
 }
 
@@ -1468,25 +1490,24 @@ border-color: #68A2CA;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 87px;
+  gap: 86px;
 }
 
 .field-date {
+  width: 119px;
   font-weight: 700;
   font-size: 20px;
-  margin-right: 24px;
-}
-
-.field-end {
-  margin-right: 18px;
+  margin: auto auto auto 0;
 }
 
 .field-adult {
-  margin-right: 46px;
+  width: 91px;
+  margin: auto 46px auto 0;
 }
 
 .field-children {
- margin-right: 82px;
+  width: 86px;
+  margin: auto 46px auto 0;
 }
 
 .count-people {
@@ -1563,8 +1584,8 @@ border-color: #68A2CA;
 }
 
 .tooltip {
-  position: absolute;
-  margin-top: 0;
+  position: fixed;
+  margin-top: 11px;
   margin-left: 59px;
   width: 26px;
   height: 26px;
@@ -1598,7 +1619,7 @@ border-color: #68A2CA;
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 19px 18px 22px 22px;
   border-radius: 10px;
   width: 256px;
   box-sizing: border-box;
