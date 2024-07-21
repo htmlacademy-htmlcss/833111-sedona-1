@@ -42,7 +42,7 @@ body {
   min-height: 100%;
 }
 
-/* Общий класс для кнопки */
+/* Общий класс для кнопок */
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -83,6 +83,7 @@ body {
   display: block;
 }
 
+/* Общий класс для картинок */
 img {
   max-width: 100%;
   height: auto;
@@ -544,7 +545,6 @@ flex-grow: 1;
 }
 
 /* Стили в footer*/
-
 .footer-newsletter-background {
   background-image: url("../images/footer/background-footer.jpg");
   color: #FFFFFF;
@@ -954,7 +954,7 @@ flex-grow: 1;
   appearance: textfield;
 }
 
-.price-label{
+.price-label {
   position: relative;
   margin-bottom: 36px;
 }
