@@ -849,41 +849,28 @@ flex-grow: 1;
   border-radius: 4px;
 }
 
-.control:not(:disabled):hover .control-mark {
+.control:not(:has(.control-input:disabled)):hover {
   opacity: 0.6;
 }
 
-.control-input:focus-visible {
-  outline: 0;
+.control:not(:has(.control-input:disabled)):active {
+  opacity: 0.3;
 }
 
 .control-input:focus-visible + .control-mark {
   outline: auto;
 }
 
-.control:not(:disabled):active .control-mark {
-  opacity: 0.3;
-}
-
 .control-input:disabled + .control-mark {
-  border-color: #242424;
+  background-color: #A9A9A9;
+  border-color: #A9A9A9;
 }
 
-.control-label:not(:disabled):hover {
-  opacity: 0.6;
+.control-input:disabled + .control-label {
+  color: #A9A9A9;
 }
 
-.control-label:not(:disabled):active {
-  opacity: 0.3;
-}
-
-.control-label:disabled {
-  border-color: #242424;
-}
-
-
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   content: "";
   position: absolute;
   top: 5px;
